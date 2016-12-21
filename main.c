@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "headers/magnitudes.h"
-void convertir ();
+void convertir();
 
 int main(){
 	system("clear");
@@ -12,7 +12,7 @@ int main(){
 	return 0;
 }
 
-void convertir (){
+void convertir(){
 	int opt;
 
 	printf("\nMagnitudes disponibles: \n\n");
@@ -26,6 +26,7 @@ void convertir (){
 	switch (opt) {
 		case 1:
 			menuLongitud();
+			conversion_longitud();
 			break;
 	}
 }
