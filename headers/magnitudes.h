@@ -2,7 +2,8 @@
 #define _MAGNITUDES_
 
 //PROTOTIPOS DE LONGITUD
-void menuLongitud();
+void menu_long();
+void conversion_long();
 
 
 

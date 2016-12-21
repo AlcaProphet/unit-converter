@@ -5,7 +5,7 @@ int opt1, opt2;
 float dato, resultado;
 
 //muestra menu de unidades
-void menu_longitud(){
+void menu_long(){
 	printf("1) Kilometro\n");
 	printf("2) Metro\n");
 	printf("3) Centimetro\n");
@@ -31,7 +31,7 @@ void menu_longitud(){
 }
 
 
-void conversion_longitud(){
+void conversion_long(){
 	//se convierten los datos a metros
 	switch (opt1) {
 		case 1: dato = dato * 1000; break;

@@ -17,6 +17,7 @@ void convertir(){
 
 	printf("\nMagnitudes disponibles: \n\n");
 	printf("1) Longitud\n");
+	//printf("2) Temperatura\n");
 	printf("\nTu seleccion > ");
 	scanf("%i", &opt);
 	putchar('\n');
@@ -25,8 +26,8 @@ void convertir(){
 
 	switch (opt) {
 		case 1:
-			menu_longitud();
-			conversion_longitud();
+			menu_long();
+			conversion_long();
 			break;
 	}
 }
