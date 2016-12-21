@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "headers/magnitudes.h"
+
 void convertir();
 
 int main(){
@@ -25,7 +25,7 @@ void convertir(){
 
 	switch (opt) {
 		case 1:
-			menuLongitud();
+			menu_longitud();
 			conversion_longitud();
 			break;
 	}
