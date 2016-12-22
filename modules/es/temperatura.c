@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float temp=0.0, r=0.0;
+float temp=0, r=0;
 char opt1, opt2;
 
 void menu_temp(){
@@ -18,6 +18,7 @@ void menu_temp(){
 
 	printf("\n\nA esta escala: ");
 	scanf("%c", &opt2);
+	while(getchar()!='\n');
 
 }
 
@@ -40,6 +41,12 @@ void conversion_temp(){
 				case 'c': case 'C':
 					r = ((temp-32) / 1.8);
 					printf("Resultado: %.4f\n", r);
+					break;
+				case 'k': case 'K':
+					/* la division debe ser con numeros flotantes, de lo contrario
+					dara como resultado 0 */
+					r = ((5.0/9.0) * (temp-32) + 273.15);
+					printf("Resultado: %.4f\n\n", r);
 					break;
 			}
 
