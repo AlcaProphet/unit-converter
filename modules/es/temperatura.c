@@ -49,6 +49,18 @@ void conversion_temp(){
 					printf("Resultado: %.4f\n\n", r);
 					break;
 			}
+		break;
+		case 'k': case 'K':
+			if(opt2=='c' || opt2=='C'){
+				r = (temp - 273.15);
+				printf("Resultado: %.4f\n\n", r);
+				break;
+			} else if(opt2=='f' || opt2=='F'){
+					r = ((1.8) * (temp - 273.15) + 32);
+					printf("Resultado: %.4f\n\n", r);
+					break;
+			}
+
 
 	}
 }
