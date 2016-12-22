@@ -23,20 +23,25 @@ void menu_temp(){
 
 void conversion_temp(){
 	switch(opt1){
-		case 'c':
-		case 'C':
+		case 'c': case 'C':
 			switch(opt2){
-				case 'f':
-				case 'F':
+				case 'f': case 'F':
 					r = ((temp*1.8)+32);
 					printf("Resultado: %.4f\n", r);
 					break;
-				case 'k':
-				case 'K':
+				case 'k': case 'K':
 					r = (temp+273.15);
 					printf("Resultado: %.4f\n", r);
 					break;
 			}
-			break;
+		break;
+		case 'f': case 'F':
+			switch(opt2){
+				case 'c': case 'C':
+					r = ((temp-32) / 1.8);
+					printf("Resultado: %.4f\n", r);
+					break;
+			}
+
 	}
 }
