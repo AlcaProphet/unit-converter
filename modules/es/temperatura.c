@@ -25,31 +25,29 @@ void menu_temp(){
 void conversion_temp(){
 	switch(opt1){
 		case 'c': case 'C':
-			switch(opt2){
-				case 'f': case 'F':
-					r = ((temp*1.8)+32);
-					printf("Resultado: %.4f\n", r);
-					break;
-				case 'k': case 'K':
-					r = (temp+273.15);
-					printf("Resultado: %.4f\n", r);
-					break;
+			if(opt2=='f' || opt2=='F'){
+				r = ((temp*1.8)+32);
+				printf("Resultado: %.4f\n", r);
+				break;
+			} else if(opt2=='k' || opt2=='K'){
+				r = (temp+273.15);
+				printf("Resultado: %.4f\n", r);
+				break;
 			}
-		break;
+
 		case 'f': case 'F':
-			switch(opt2){
-				case 'c': case 'C':
-					r = ((temp-32) / 1.8);
-					printf("Resultado: %.4f\n", r);
-					break;
-				case 'k': case 'K':
-					/* la division debe ser con numeros flotantes, de lo contrario
-					dara como resultado 0 */
-					r = ((5.0/9.0) * (temp-32) + 273.15);
-					printf("Resultado: %.4f\n\n", r);
-					break;
+			if(opt2=='c' || opt2=='C'){
+				r = ((temp-32) / 1.8);
+				printf("Resultado: %.4f\n", r);
+				break;
+			} else if(opt2=='k' || opt2=='K'){
+				/* la division debe ser con numeros flotantes, de lo contrario
+				dara como resultado 0 */
+				r = ((5.0/9.0) * (temp-32) + 273.15);
+				printf("Resultado: %.4f\n\n", r);
+				break;
 			}
-		break;
+
 		case 'k': case 'K':
 			if(opt2=='c' || opt2=='C'){
 				r = (temp - 273.15);
@@ -60,7 +58,7 @@ void conversion_temp(){
 					printf("Resultado: %.4f\n\n", r);
 					break;
 			}
-
-
+			
+		default: printf("Opcion invalida\n");
 	}
 }
