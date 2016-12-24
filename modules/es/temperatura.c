@@ -4,14 +4,17 @@
 float temp=0, r=0;
 char opt1, opt2;
 
-void menu_temp(){
+char menu1_temp(){
 	printf("C) Celcius\n");
 	printf("F) Fahrenheit\n");
 	printf("K) Kelvin\n");
 	printf("\nQuiero convertir esta escala: ");
 	scanf("%c", &opt1);
 	while(getchar()!='\n');
+	return opt1;
+}
 
+void menu2_temp(){
 	printf("\tIngresa la temperatura: ");
 	scanf("%f", &temp);
 	while(getchar()!='\n');
@@ -19,7 +22,6 @@ void menu_temp(){
 	printf("\n\nA esta escala: ");
 	scanf("%c", &opt2);
 	while(getchar()!='\n');
-
 }
 
 void conversion_temp(){
@@ -58,7 +60,7 @@ void conversion_temp(){
 					printf("Resultado: %.4f\n\n", r);
 					break;
 			}
-			
+
 		default: printf("Opcion invalida\n");
 	}
 }
