@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include "headers/magnitudes.h"
 
-void convertir();
+void menu_principal();
 
 int main(){
 	system("clear");
 	printf("\t.:: Bienvenido al conversor de unidades ::.\n");
-	convertir();
+	menu_principal();
 
 	return 0;
 }
 
-void convertir(){
+void menu_principal(){
 	int opt;
 
 	printf("\nMagnitudes disponibles: \n\n");
@@ -30,9 +30,21 @@ void convertir(){
 			conversion_long();
 			break;
 		case 2:
-			menu_temp();
-			conversion_temp();
+			if (menu1_temp()=='r')
+			{
+				system("clear");
+				menu_principal();
+				break;
+			}
+
+			else
+			{
+				menu2_temp();
+				conversion_temp();
+			}
+
 			break;
+
 
 	}
 }

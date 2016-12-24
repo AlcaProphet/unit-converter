@@ -6,7 +6,8 @@ void menu_long();
 void conversion_long();
 
 //TEMPERATURA
-void menu_temp();
+char menu1_temp();
+void menu2_temp();
 void conversion_temp();
 
 

@@ -8,6 +8,7 @@ char menu1_temp(){
 	printf("C) Celcius\n");
 	printf("F) Fahrenheit\n");
 	printf("K) Kelvin\n");
+	printf("\nR) Regresar al menu principal\n");
 	printf("\nQuiero convertir esta escala: ");
 	scanf("%c", &opt1);
 	while(getchar()!='\n');
