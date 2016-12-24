@@ -4,7 +4,8 @@
 
 void menu_principal();
 
-int main(){
+int main()
+{
 	system("clear");
 	printf("\t.:: Bienvenido al conversor de unidades ::.\n");
 	menu_principal();
@@ -12,7 +13,8 @@ int main(){
 	return 0;
 }
 
-void menu_principal(){
+void menu_principal()
+{
 	int opt;
 
 	printf("\nMagnitudes disponibles: \n\n");
@@ -24,17 +26,27 @@ void menu_principal(){
 	system("clear");
 	while(getchar()!='\n');
 
-	switch (opt) {
+	switch (opt)
+	{
 		case 1:
-			menu_long();
-			conversion_long();
+			if (menu1_long()==0)
+			{
+				system("clear");
+				menu_principal();
+			}
+
+			else
+			{
+				menu2_long();
+				conversion_long();
+			}
 			break;
+
 		case 2:
 			if (menu1_temp()=='r')
 			{
 				system("clear");
 				menu_principal();
-				break;
 			}
 
 			else
@@ -42,9 +54,6 @@ void menu_principal(){
 				menu2_temp();
 				conversion_temp();
 			}
-
 			break;
-
-
 	}
 }

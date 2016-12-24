@@ -2,7 +2,8 @@
 #define _MAGNITUDES_
 
 //PROTOTIPOS DE LONGITUD
-void menu_long();
+int menu1_long();
+void menu2_long();
 void conversion_long();
 
 //TEMPERATURA

@@ -5,7 +5,7 @@ int opt1, opt2;
 float dato, resultado;
 
 //muestra menu de unidades
-void menu_long(){
+int menu1_long(){
 	printf("1) Kilometro\n");
 	printf("2) Metro\n");
 	printf("3) Centimetro\n");
@@ -17,10 +17,15 @@ void menu_long(){
 	printf("9) Pie\n");
 	printf("10) Pulgada\n");
 	printf("11) Milla nautica\n");
+	printf("\n(Escribe 0 para regresar al menu principal)\n");
 
 	printf("\nConvertir esta unidad > ");
 	scanf("%i", &opt1);
 	while(getchar()!='\n'); //limpiando el buffer
+	return opt1;
+}
+
+void menu2_long(){
 	printf("Ingresa el dato: ");
 	scanf("%f", &dato);
 	while(getchar()!='\n');
