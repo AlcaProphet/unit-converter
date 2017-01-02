@@ -20,6 +20,7 @@ void menu_principal()
 	printf("\nMagnitudes disponibles: \n\n");
 	printf("1) Longitud\n");
 	printf("2) Temperatura\n");
+	printf("3) Tiempo\n");
 	printf("\nTu seleccion > ");
 	scanf("%i", &opt);
 	putchar('\n');
@@ -54,6 +55,20 @@ void menu_principal()
 				menu2_temp();
 				conversion_temp();
 			}
+			break;
+
+		case 3:
+			if (menu1_tiempo()==0)
+			{
+				system("clear");
+				menu_principal();
+			}
+			/*
+			else
+			{
+				menu2_tiempo();
+				conversion_tiempo();
+			}*/
 			break;
 	}
 }

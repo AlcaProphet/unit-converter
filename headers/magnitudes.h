@@ -11,6 +11,9 @@ char menu1_temp();
 void menu2_temp();
 void conversion_temp();
 
+//TIEMPO
+int menu1_tiempo();
+
 
 
 #endif
