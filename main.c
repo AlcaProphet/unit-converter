@@ -63,12 +63,12 @@ void menu_principal()
 				system("clear");
 				menu_principal();
 			}
-			/*
+			
 			else
 			{
 				menu2_tiempo();
-				conversion_tiempo();
-			}*/
+				//conversion_tiempo();
+			}
 			break;
 	}
 }

@@ -20,8 +20,19 @@ int menu1_tiempo()
 	printf("12) Siglo\n");
 	printf("\n(Escribe 0 para regresar al menu principal)\n");
 
-	printf("\nConvertir esta unidad > ");
+	printf("\nConvertir esta unidad... > ");
 	scanf("%i", &opt1);
 	while(getchar()!='\n'); //limpiando el buffer
 	return opt1;
+}
+
+void menu2_tiempo()
+{
+	printf("\tIngresa el dato: ");
+	scanf("%f", &dato);
+	while(getchar()!='\n');
+
+	printf("\n\nA esta unidad: ");
+	scanf("%i", &opt2);
+	while(getchar()!='\n');
 }
