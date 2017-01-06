@@ -14,5 +14,6 @@ void conversion_temp();
 //TIEMPO
 int menu1_tiempo();
 void menu2_tiempo();
+void conversion_tiempo();
 
 #endif
