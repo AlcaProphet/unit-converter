@@ -32,7 +32,30 @@ void menu2_masa()
 	while(getchar()!='\n');
 }
 
-void conversion_masa()
+void convertir_masa()
 {
-	
+	// convirte a la unidad base
+	switch(opt1)
+	{
+		case 1: dato = dato / 1000000.00; break;
+		case 2: dato = dato / 1000.00; break;
+		case 3: dato = dato; break;
+		case 4: dato = dato * 1000; break;
+		case 5: dato = dato * 1000000.00; break;
+		case 6: dato = dato / 0.00440925; break;
+		case 7: dato = dato / 0.035274; break;
+	}
+
+	switch(opt2)
+	{
+		case 1: res = dato * 1000000; break;
+		case 2: res = dato * 1000; break;
+		case 3: res = dato; break;
+		case 4: res = dato / 1000.00; break;
+		case 5: res = dato / 1000000.00; break;
+		case 6: res = dato * 0.00440925; break;
+		case 7: res = dato * 0.035274; break;
+	}
+
+	printf("El resultado es: %.9f\n", res);
 }

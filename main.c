@@ -82,7 +82,7 @@ void menu_principal()
 			else
 			{
 				menu2_masa();
-				//conversion_masa();
+				convertir_masa();
 			}
 	}
 }
