@@ -1,19 +1,21 @@
 #ifndef _MAGNITUDES_ //si no esta definida...
 #define _MAGNITUDES_
 
-//PROTOTIPOS DE LONGITUD
+// longitud
 int menu1_long();
 void menu2_long();
 void conversion_long();
 
-//TEMPERATURA
+// temperatura
 char menu1_temp();
 void menu2_temp();
 void conversion_temp();
 
-//TIEMPO
+// tiempo
 int menu1_tiempo();
 void menu2_tiempo();
 void conversion_tiempo();
+
+// masa
 
 #endif

@@ -21,6 +21,7 @@ void menu_principal()
 	printf("1) Longitud\n");
 	printf("2) Temperatura\n");
 	printf("3) Tiempo\n");
+	printf("4) Masa\n");
 	printf("\nTu seleccion > ");
 	scanf("%i", &opt);
 	putchar('\n');
@@ -70,5 +71,18 @@ void menu_principal()
 				conversion_tiempo();
 			}
 			break;
+
+		case 4:
+			if(menu1_masa()==0)
+			{
+				system("clear");
+				menu_principal();
+			} 
+
+			else
+			{
+				//menu2_masa();
+				//conversion_masa();
+			}
 	}
 }

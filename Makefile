@@ -1,5 +1,5 @@
-programa: main.o longitud.o temperatura.o tiempo.o
-	gcc -o programa main.o longitud.o temperatura.o tiempo.o
+programa: main.o longitud.o temperatura.o tiempo.o masa.o
+	gcc -o programa main.o longitud.o temperatura.o tiempo.o masa.o
 
 main.o: main.c headers/magnitudes.h
 	gcc -c main.c
@@ -12,3 +12,6 @@ temperatura.o: modules/es/temperatura.c headers/magnitudes.h
 
 tiempo.o: modules/es/tiempo.c headers/magnitudes.h 
 	gcc -c modules/es/tiempo.c
+
+masa.o: modules/es/masa.c headers/magnitudes.h
+	gcc -c modules/es/masa.c
