@@ -17,5 +17,8 @@ void menu2_tiempo();
 void conversion_tiempo();
 
 // masa
+int menu1_masa();
+void menu2_masa();
+void convertir_masa();
 
 #endif

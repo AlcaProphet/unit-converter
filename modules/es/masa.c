@@ -20,3 +20,19 @@ int menu1_masa()
 	while(getchar()!='\n'); //limpiando el buffer
 	return opt1;
 }
+
+void menu2_masa()
+{
+	printf("\tIngresa el dato: ");
+	scanf("%f", &dato);
+	while(getchar()!='\n');
+
+	printf("\n\nA esta unidad: ");
+	scanf("%i", &opt2);
+	while(getchar()!='\n');
+}
+
+void conversion_masa()
+{
+	
+}

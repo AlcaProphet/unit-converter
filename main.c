@@ -81,7 +81,7 @@ void menu_principal()
 
 			else
 			{
-				//menu2_masa();
+				menu2_masa();
 				//conversion_masa();
 			}
 	}
