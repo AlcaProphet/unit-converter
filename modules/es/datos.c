@@ -27,7 +27,8 @@ void menu2_datos()
 	while(getchar()!='\n'); //limpiando el buffer
 
 	printf("\nA esta unidad... > ");
-	scanf("%f", &opt2);
+	scanf("%i", &opt2);
+	while(getchar()!='\n'); 
 }
 
 void convertir_datos()
@@ -36,21 +37,23 @@ void convertir_datos()
 	{
 		case 1: dato = dato; break;
 		case 2: dato = dato * 8; break;
-		case 3: dato = dato * 81192; break;
+		case 3: dato = dato * 8192; break;
 		case 4: dato = dato * 8388608; break;
 		case 5: dato = dato * 8589934592; break;
 		case 6: dato = dato * 8796093022208; break;
-		case 7: dato = dato * 9007199254741000000000000000;break;
+		case 7: dato = dato * 9.007199254741; break;
 	}
 
 	switch(opt2)
 	{
-		case 1: break;
-		case 2: break;
-		case 3: break;
-		case 4: break;
-		case 5: break;
-		case 6: break;
-		case 7: break;
+		case 1: res = dato; break;
+		case 2: res = dato / 8.00; break;
+		case 3: res = dato / 8192.00; break;
+		case 4: res = dato / 8388608.00; break;
+		case 5: res = dato / 8589934592.00; break;
+		case 6: res = dato / 8796093022208.00; break;
+		case 7: res = dato / 9.007199254741; break;
 	}
+
+	printf("El resultado es: %f\n", res);
 }

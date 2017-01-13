@@ -86,7 +86,7 @@ void menu_principal()
 				convertir_masa();
 			}
 			break;
-			
+
 		case 5:
 			if(menu1_datos()==0)
 			{
@@ -97,6 +97,7 @@ void menu_principal()
 			else
 			{
 				menu2_datos();
+				convertir_datos();
 			}
 			break;
 	}
