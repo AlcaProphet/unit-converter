@@ -21,4 +21,8 @@ int menu1_masa();
 void menu2_masa();
 void convertir_masa();
 
+// datos
+int menu1_datos();
+void menu2_datos();
+
 #endif

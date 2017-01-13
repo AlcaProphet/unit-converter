@@ -22,6 +22,7 @@ void menu_principal()
 	printf("2) Temperatura\n");
 	printf("3) Tiempo\n");
 	printf("4) Masa\n");
+	printf("5) Datos\n");
 	printf("\nTu seleccion > ");
 	scanf("%i", &opt);
 	putchar('\n');
@@ -31,7 +32,7 @@ void menu_principal()
 	switch (opt)
 	{
 		case 1:
-			if (menu1_long()==0)
+			if(menu1_long()==0)
 			{
 				system("clear");
 				menu_principal();
@@ -45,7 +46,7 @@ void menu_principal()
 			break;
 
 		case 2:
-			if (menu1_temp()=='r')
+			if(menu1_temp()=='r')
 			{
 				system("clear");
 				menu_principal();
@@ -59,7 +60,7 @@ void menu_principal()
 			break;
 
 		case 3:
-			if (menu1_tiempo()==0)
+			if(menu1_tiempo()==0)
 			{
 				system("clear");
 				menu_principal();
@@ -84,5 +85,19 @@ void menu_principal()
 				menu2_masa();
 				convertir_masa();
 			}
+			break;
+			
+		case 5:
+			if(menu1_datos()==0)
+			{
+				system("clear");
+				menu_principal();
+			}
+
+			else
+			{
+				menu2_datos();
+			}
+			break;
 	}
 }
