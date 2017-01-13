@@ -29,3 +29,28 @@ void menu2_datos()
 	printf("\nA esta unidad... > ");
 	scanf("%f", &opt2);
 }
+
+void convertir_datos()
+{
+	switch(opt1)
+	{
+		case 1: dato = dato; break;
+		case 2: dato = dato * 8; break;
+		case 3: dato = dato * 81192; break;
+		case 4: dato = dato * 8388608; break;
+		case 5: dato = dato * 8589934592; break;
+		case 6: dato = dato * 8796093022208; break;
+		case 7: dato = dato * 9007199254741000000000000000;break;
+	}
+
+	switch(opt2)
+	{
+		case 1: break;
+		case 2: break;
+		case 3: break;
+		case 4: break;
+		case 5: break;
+		case 6: break;
+		case 7: break;
+	}
+}
