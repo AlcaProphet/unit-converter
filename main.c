@@ -23,6 +23,7 @@ void menu_principal()
 	printf("3) Tiempo\n");
 	printf("4) Masa\n");
 	printf("5) Datos\n");
+	printf("Presiona 's' para salir.");
 	printf("\nTu seleccion > ");
 	scanf("%i", &opt);
 	putchar('\n');
@@ -100,5 +101,8 @@ void menu_principal()
 				convertir_datos();
 			}
 			break;
+		default:  
+		printf("Adios!\n");
+		exit(-1);
 	}
 }
